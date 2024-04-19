@@ -8,3 +8,12 @@ ALL COMMANDS
 7) docker start pufferpanel
 8) docker exec -it pufferpanel /pufferpanel/pufferpanel user add
 9) Open Port 8080 From Ports with Ctrl + Mouse left click
+
+how to start server : 
+sudo su 
+docker stop pufferpanel
+docker start pufferpanel 
+
+how to stop server :
+docker stop pufferpanel 
+open github and stop the codespace
