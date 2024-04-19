@@ -15,6 +15,7 @@ sudo su
 docker stop pufferpanel
 docker exec -it pufferpanel /pufferpanel/pufferpanel user add
 enter details 
+docker start pufferpanel
 go to ports in the terminal 
 click on port 8080 
 now login 
