@@ -9,10 +9,22 @@ ALL COMMANDS
 8) docker exec -it pufferpanel /pufferpanel/pufferpanel user add
 9) Open Port 8080 From Ports with Ctrl + Mouse left click
 
+how to start server first time :
+open terminal
+sudo su 
+docker stop pufferpanel
+docker exec -it pufferpanel /pufferpanel/pufferpanel user add
+enter details 
+go to ports in the terminal 
+click on port 8080 
+now login 
+
 how to start server : 
 sudo su 
 docker stop pufferpanel
 docker start pufferpanel 
+open puffer panel and login with your account 
+open privately server and start it 
 
 how to stop server :
 docker stop pufferpanel 
