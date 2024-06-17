@@ -1,32 +1,9 @@
-ALL COMMANDS
-1) sudo apt update
-2) sudo apt upgrade
-3) sudo apt install sudo
-4) mkdir -p /var/lib/pufferpanel
-5) docker volume create pufferpanel-config
-6) docker create --name pufferpanel -p 8080:8080 -p 5657:5657 -v pufferpanel-config:/etc/pufferpanel -v /var/lib/pufferpanel:/var/lib/pufferpanel -v /var/run/docker.sock:/var/run/docker.sock --restart=on-failure pufferpanel/pufferpanel:latest
-7) docker start pufferpanel
-8) docker exec -it pufferpanel /pufferpanel/pufferpanel user add
-9) Open Port 8080 From Ports with Ctrl + Mouse left click
+1) sudo apt update && apt upgrade
 
-how to start server first time :
-open terminal
-sudo su 
-docker stop pufferpanel
-docker exec -it pufferpanel /pufferpanel/pufferpanel user add
-enter details 
-docker start pufferpanel
-go to ports in the terminal 
-click on port 8080 
-now login 
+2) Command for installing Paper :- wget https://api.papermc.io/v2/projects/paper/versions/1.20.4/builds/493/downloads/paper-1.20.4-493.jar
 
-how to start server : 
-sudo su 
-docker stop pufferpanel
-docker start pufferpanel 
-open puffer panel and login with your account 
-open privately server and start it 
+3) java -Xmx8G -Xms4G -jar paper.jar --nogui
 
-how to stop server :
-docker stop pufferpanel 
-open github and stop the codespace
+To Make your server run on 16GB RAM [DO NOT RUN THIS COMMAND FIRST, RUN THE 8GB RAM ONE FIRST AND AFTER THAT, RUN THIS COMMAND] :-
+
+   java -Xmx16G -Xms4G -jar paper.jar --nogui
